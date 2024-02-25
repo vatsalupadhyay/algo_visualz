@@ -68,7 +68,7 @@ export default function Home() {
 }
 
  
-function AppleIcon(props) {
+function AppleIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
