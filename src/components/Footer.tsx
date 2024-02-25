@@ -172,7 +172,7 @@ export default function Component() {
     )
   }
   
-  function AppleIcon(props) {
+  function AppleIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
       <svg
         {...props}

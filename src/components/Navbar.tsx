@@ -36,7 +36,7 @@ export default function Component() {
   )
 }
   
-function AppleIcon(props) {
+function AppleIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
       <svg
         {...props}
@@ -55,7 +55,7 @@ function AppleIcon(props) {
       </svg>
     )
   }
-function FlagIcon(props) {
+function FlagIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
