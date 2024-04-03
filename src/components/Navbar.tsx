@@ -1,6 +1,8 @@
 import Link from "next/link"
 // import { Button } from "@/components/ui/"
 export default function Component() {
+
+
   return (
     <nav className="bg-black shadow">
       <div className="container mx-auto px-6 py-3 flex justify-between items-center">
@@ -17,8 +19,9 @@ export default function Component() {
             Animation
           </Link>
         
-          <Link className="text-white hover:text-blue-600" href="#">
-            Coding
+          <Link className="text-white  hover:text-blue-600" href="#">
+           Coding
+           
           </Link>
           <Link className="text-white hover:text-blue-600" href="/quiz">
             Quiz
