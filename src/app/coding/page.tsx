@@ -2,8 +2,9 @@
 import React from 'react'
 import ProblemsTable from "@/components copy/ProblemsTable/ProblemsTable";
 import { useState } from "react";
-import Navbar from '@/components copy/Navbar/Navbar';
+// import Navbar from '@/components copy/Navbar/Navbar';
 import { RecoilRoot } from 'recoil';
+import Navbar from '../components/Navbar';
 // import useHasMounted from "@/hooks/useHasMounted";
 // import Topbar from '@/components copy/Topbar/Topbar';
 
@@ -14,12 +15,13 @@ const Coding = () => {
 
   return (
     <RecoilRoot>
+      <Navbar />
     <div className='bg-gray-8 '>
-    <Navbar />
+    {/* <Navbar /> */}
     {/* <Topbar /> */}
     <h1
     className="text-2xl text-center text-gray-400 dark:text-gray-400 font-medium
-              uppercase  "
+              uppercase py-5"
   >
     &ldquo; QUALITY OVER QUANTITY &rdquo; 👇
   </h1>

@@ -354,6 +354,7 @@ import { useState, FormEvent } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Navbar from "../components/Navbar";
 
 export default function QuizComponent() {
   const [correctAnswersCount, setCorrectAnswersCount] = useState<number | null>(null);
@@ -411,6 +412,8 @@ export default function QuizComponent() {
   };
 
   return (
+    <>
+    <Navbar />
     <div className="bg-black text-white h-screen py-12">
       <div className="container grid gap-4 px-4 text-center mx-auto md:px-6 lg:gap-10">
         <div className="space-y-3">
@@ -466,5 +469,6 @@ export default function QuizComponent() {
         </div>
       </div>
     </div>
+    </>
   );
 }

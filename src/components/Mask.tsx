@@ -7,7 +7,7 @@ export default function SVGMaskEffectDemo() {
       <MaskContainer
         revealText={
           <p className=" bg-max-w-4xl mx-auto text-white  text-center  text-4xl font-bold">
-            Hover to learn About Coin Change Algorithm
+            Coin Change Algorithm Definition                 
           </p>
         }
         className=" bg-white h-[40rem] rounded-md"

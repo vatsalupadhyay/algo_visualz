@@ -31,8 +31,11 @@ import React from "react";
 import { SparklesCore } from "@/components/ui/sparkles";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import Navbar from "../components/Navbar";
 export default function SparklesPreview() {
   return (
+    <>
+    <Navbar />
     <div className="h-[46rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
      <Link href="/answers"> <button className="md:text-7xl text-2xl lg:text-5xl font-bold text-center text-white relative z-20 shadow-white">
         Get Started
@@ -59,5 +62,6 @@ export default function SparklesPreview() {
         <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
       </div>
     </div>
+    </>
   );
 }

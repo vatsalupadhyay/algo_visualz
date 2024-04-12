@@ -8,6 +8,7 @@ import Mask from "@/components/Mask";
 import { SWRConfig } from "swr";
 import { UserButton } from "@clerk/nextjs";
 import { useUser } from "@clerk/clerk-react";
+import  Tabs  from "@/components/Tabs";
 
 export default function Home() {
   // const {user, isLoaded} = useUser();
@@ -27,8 +28,7 @@ export default function Home() {
             </Link>
             <Link
               className="text-white hover:text-blue-600"
-              href="https://vatsalupadhyay.github.io/anime/
-"
+              href=" https://vatsalupadhyay.github.io/coin_change/"
             >
               Simulation
             </Link>
@@ -38,6 +38,9 @@ export default function Home() {
             </Link>
             <Link className="text-white hover:text-blue-600" href="/quiz">
               Quiz
+            </Link>
+            <Link className="text-white hover:text-blue-600" href="/AI">
+              Ask AI
             </Link>
           </div>
           <div className="flex items-center space-x-4">
@@ -59,10 +62,12 @@ export default function Home() {
       </nav>
       <div className="bg-black text-white">
         <Hero />
+        <Tabs />
+        <Mask />
+      <Footer />s
       </div>
       {/* <Coding /> */}
-      <Mask />
-      <Footer />
+     
     </main>
   );
 }
