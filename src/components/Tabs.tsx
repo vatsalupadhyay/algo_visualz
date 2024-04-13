@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Tabs } from "../components/ui/tabs";
 import ai_image from "../app/assets/ai.png";
 import coding_image from "../app/assets/coding.png";
-import sim_image from "../app/assets/simulation.png";
+import simulate_image from "../app/assets/simulate.png";
 import quiz_image from "../app/assets/quiz.png";
 
 export default function TabsDemo() {
@@ -76,7 +76,7 @@ const AIchat = () => {
 const Simulation = () => {
     return (
       <Image
-      src={sim_image}
+      src={simulate_image}
         alt="dummy image"
         width="1000"
         height="1000"
